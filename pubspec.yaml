@@ -1,0 +1,58 @@
+name: archie_pos
+description: "Sari-Sari POS & Inventory — offline-first."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_bloc: ^8.1.6
+  provider: ^6.1.2
+  equatable: ^2.0.7
+
+  # Routing
+  go_router: ^14.6.2
+
+  # Functional error handling
+  dartz: ^0.10.1
+
+  # Local DB (offline-first)
+  drift: ^2.21.0
+  sqlite3_flutter_libs: ^0.5.27
+  path_provider: ^2.1.5
+  path: ^1.9.0
+
+  # Storage
+  flutter_secure_storage: ^9.2.2
+  shared_preferences: ^2.3.3
+
+  # DI
+  get_it: ^8.0.2
+
+  # Utils
+  intl: ^0.19.0
+  uuid: ^4.5.1
+
+  # Charts
+  fl_chart: ^0.69.0
+
+  # Image picker (product photos)
+  image_picker: ^1.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  drift_dev: ^2.21.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/config/
